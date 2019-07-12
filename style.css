@@ -1,0 +1,83 @@
+body {
+  margin:0;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(45,45,45,0.98);
+  width: 100%;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0px;
+}
+
+.navbar figure {
+  float: left;
+  padding: 0px 0px;
+  display: block;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.navbar a:hover {
+  color: rgba(124, 124, 124, 0.98);
+}
+
+header .navbar {
+  top: 0;
+  position: fixed;
+}
+
+
+footer .navbar {
+  bottom: 0;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+}
+
+nav {
+  height: 100%;
+  float: none;
+  text-align: -webkit-center;
+}
+
+
+nav ul {
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  display: table;
+  display: inline-block;
+    list-style-type: none;
+    margin: 0px;
+}
+
+nav ul li {
+  width: 150px;    
+  display: table-cell;  
+  vertical-align: middle; 
+  text-align: center;
+}
+
+
+.icon {
+  display: inline-block;
+  background-size: cover;
+}
+.icon-menu:hover,
+.icon-menu:focus {
+  filter: invert(50%) ;
+}
