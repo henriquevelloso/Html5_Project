@@ -1,8 +1,21 @@
 body {
-  margin:0;
   font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0px ; 
 }
 
+main{
+  max-width: 1024px;
+  min-width: 960px;
+  height: 100%;
+  margin: 0px auto; 
+}
+
+nav {
+  max-width: 1024px;
+  min-width: 960px;
+  height: 100%;
+  margin: 0px auto; 
+}
 
 .navbar {
   overflow: hidden;
@@ -36,11 +49,6 @@ body {
 header .navbar {
   top: 0;
   position: fixed;
-}
-
-
-footer .navbar {
-  bottom: 0;
 }
 
 .main {
@@ -80,4 +88,226 @@ nav ul li {
 .icon-menu:hover,
 .icon-menu:focus {
   filter: invert(50%) ;
+}
+
+
+
+footer {
+  width: 100%;
+  height: 120px;
+  bottom: 0px;
+
+    overflow: hidden;
+    background-color: rgba(45,45,45,0.98);
+  
+}
+
+footer div article {
+  margin-top: 18%;
+}
+
+.boxCentral {
+  min-width: 100%;
+  display: inline-table;
+}
+
+.boxRight {
+  float: right;
+  min-width: 49%;
+
+}
+
+.boxLeft {
+  float: left;
+  min-width: 49%;
+}
+
+.box {
+  display: inline-table;
+    background: #FAFAFA;
+  margin-top: 18px;
+  border-radius: 8px;
+}
+
+
+.boxtop {
+  height: 500px;
+
+}
+
+
+
+.boxFooter {
+  height: 500px;
+
+}
+
+ figure {
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+article  {
+  display: inline;
+  /* padding: 30px 30px 0px 30px; */
+  padding-top: 30px;
+}
+
+.divImage {
+  height: 100%;
+  bottom: 0px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-table;
+  margin-top: 0px;
+}
+
+figure img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit:contain;
+}
+.centerText {
+  text-align: center;
+}
+
+.boxBackMac {
+  background: #121217;
+  color: #FAFAFA;
+}
+
+.imageBackMac {
+  height: 270px;
+}
+
+.imageWatch {
+  height: 200px;
+  padding-top: 30px;
+}
+
+.imagePad {
+  height: 290px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.watchtLogo {
+  height: 60px;
+}
+
+.imagemIPhones {
+  height: 300px;
+  padding-top: 30px;
+}
+
+.iPhonetLogo {
+  height: 30px;
+}
+
+.linkLarge a{
+  text-decoration: none;
+  font-size: large;
+  padding: 10px;
+  color: #0070C9;
+}
+
+
+.linkLarge a:hover{
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+
+
+.videoPods {
+  
+  width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.airpodsDiv {
+  z-index: 4;
+  position: absolute;
+  margin-top: 30px;
+  color: white;
+  text-align: left;
+  margin-left: 60px;
+}
+
+.imageCard {
+  height: 320px;
+}
+
+form {
+  display: grid;
+}
+
+.formDiv {
+  padding: 20px;
+}
+
+.formTags {
+  margin-bottom: 20px
+}
+
+.inputStyle {
+  box-sizing: border-box;
+    height: 45px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #888;
+    margin: 10px 5px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 400;
+    background-color: #fff;
+    user-select: text;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+}
+
+::-webkit-input-placeholder {
+  color:    #aaa;
+}
+:-moz-placeholder {
+ color:    #aaa;
+ opacity:  1;
+}
+::-moz-placeholder {
+ color:    #aaa;
+ opacity:  1;
+}
+:-ms-input-placeholder {
+ color:    #aaa;
+}
+::-ms-input-placeholder {
+ color:    #aaa;
+}
+
+input[type=submit], button[type=submit] {
+ background-color: rgba(45,45,45,0.98);
+ border: none;
+ color: #fff;
+ font-size: 1em;
+ padding: 10px 50px;
+ text-transform: uppercase;
+ font-weight: normal;
+ border-radius: 4px;
+    
+}
+
+article:hover figure img {
+  transform: scale(1.03);
+  transition: all 1s ease-out;
 }

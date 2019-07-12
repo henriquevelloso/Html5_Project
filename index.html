@@ -2,14 +2,13 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>New Apple</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <style type="text/css">
         @import "style.css";
     </style>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
 </head>
 
 <body>
@@ -21,7 +20,7 @@
                     <li><a href="#home">
                             <object type="image/svg+xml" data="imagens/logo.svg" class="icon icon-menu">
                                 Logo
-                              </object></a>
+                            </object></a>
                     </li>
                     <li> <a href="#home">Mac</a></li>
                     <li> <a href="#news">iPad</a></li>
@@ -33,12 +32,12 @@
                     <li><a href="#home">
                             <object type="image/svg+xml" data="imagens/search.svg" class="icon icon-menu">
                                 Search
-                              </object></a>
+                            </object></a>
                     </li>
                     <li><a href="#home">
                             <object type="image/svg+xml" data="imagens/bag.svg" class="icon icon-menu">
                                 Bag
-                              </object></a>
+                            </object></a>
                     </li>
                 </ul>
             </nav>
@@ -46,39 +45,109 @@
     </header>
     <main>
         <div class="main">
-            <h1>Fixed Top Menu</h1>
-            <h2>Scroll this page to see the effect</h2>
-            <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+            <!-- Macs -->
+            <article class="box boxCentral boxtop centerText">
+                <h1>MacBook Air</h1>
+                <p>Lightness strikes again. </p>
+                <div class="linkLarge">
+                    <a href="#" target="_self">Buy</a>
+                    <a href="#" target="_self">Learn more</a>
+                </div>
+                <figure><img src="imagens/macs.jpg" alt="iPhone XR"></figure>
 
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
-            <p>Some text some text some text some text..</p>
+            </article>
+            <!-- Macbook Pro -->
+            <article class="box boxLeft boxBackMac centerText">
+                <h1>MacBook Air</h1>
+                <p>More power. More performance. More pro.</p>
+                <div class="linkLarge">
+                    <a href="#" target="_self">Buy</a>
+                    <a href="#" target="_self">Learn more</a>
+                </div>
+                <figure><img class="imageBackMac" src="imagens/macProBlack.jpg" alt="iPhone XR"></figure>
+            </article>
+            <!-- iPad Pro -->
+            <article class="box boxRight centerText">
+                <h1>iPad Pro</h1>
+                <p>All new. All screen. All powerful.</p>
+                <div class="linkLarge">
+                    <a href="#" target="_self">Buy</a>
+                    <a href="#" target="_self">Learn more</a>
+                </div>
+                <figure><img class="imagePad" src="imagens/iPad.jpg" alt="iPhone XR"></figure>
+            </article>
+
+            <!-- iPhone -->
+            <article class="box boxLeft centerText">
+                <figure><img class="iPhonetLogo" src="imagens/iphoneXrLogo.png" alt="iPhone XR"></figure>
+                <p>All new. All screen. All powerful.</p>
+                <div class="linkLarge">
+                    <a href="#" target="_self">Buy</a>
+                    <a href="#" target="_self">Learn more</a>
+                </div>
+                <figure><img class="imagemIPhones" src="imagens/iphonesjpg.jpg" alt="iPhone XR"></figure>
+            </article>
+            <!-- Apple Watch -->
+            <article class="box boxRight centerText">
+                <figure><img class="watchtLogo" src="imagens/watchLogo.jpg" alt="iPhone XR"></figure>
+                <p>All-screen design. Longest battery life ever in an iPhone. </p>
+                <div class="linkLarge">
+                    <a href="#" target="_self">Buy</a>
+                    <a href="#" target="_self">Learn more</a>
+                </div>
+                <figure><img class="imageWatch" src="imagens/watch.jpg" alt="iPhone XR"></figure>
+            </article>
+            <!-- AirPods Video -->
+            <article class="box boxCentral">
+                <div id="airpodsDiv" class="airpodsDiv">
+                    <h1>AirPods</h1>
+                <p>with wireless charging. Watch the film.</p>
+                </div>
+                <video controls class="videoPods" controls  poster="imagens/airPods.jpg">
+                        <source src="imagens/airpods.mp4" 
+                                type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+                      </video>
+            </article>
+            <!-- Card-->
+            <article class="box boxLeft centerText">
+                    <h1>This is Card</h1>
+                <p>A new kind of credit card. Created by Apple, not a bank. </p>
+                <div class="linkLarge">
+                    <a href="#" target="_self">Learn more</a>
+                </div>
+                <figure><img class="imageCard" src="imagens/card.jpg" alt="Apple Card"></figure>
+            </article>
+
+             <!-- Form-->
+             <article class="box boxRight centerText">
+                    <h1>Be the first to get Card.</h1>
+                <p>Sign up and we’ll send you the latest news about Apple Card. </p>
+                <p>The power of iPhone. In a credit card.</p>
+                <div class="formDiv">
+                        <form action="card.aspx" method="post">
+                            <input type="text" name="nome" class="formTags inputStyle" placeholder="Nome completo" required>
+                            <input type="email" name="email" class="formTags inputStyle" placeholder="Email de contato" required>
+                            <select class="formTags inputStyle" name="assunto">
+                                <option value="0">Assunto</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="reclamacao">Reclamação</option>
+                                <option value="elogio">Elogio</option>
+                            </select>
+                            <textarea class="formTags inputStyle" name="mensagem" placeholder="Deixe sua mensagem..." rows="4"></textarea>
+                            <input type="submit" name="acao" class="formTags inputStyle" value="Enviar">
+                        </form>
+                    </div>
+            </article>
+            <article class="box boxCentral boxFooter"></article>
+
+
         </div>
     </main>
     <footer>
-        <div class="navbar">
+        <div class="">
             <div>
-
+                <div>ok</div>
             </div>
-            <figure><img src="imagens/logo_spi.png"
-                    alt="Logo do Curso Superior de Tecnologia em Sistemas para Internet"></figure>
         </div>
     </footer>
 </body>
