@@ -21,6 +21,7 @@ nav {
   overflow: hidden;
   background-color: rgba(45,45,45,0.98);
   width: 100%;
+  z-index: 7;
 }
 
 .navbar a {
@@ -94,7 +95,7 @@ nav ul li {
 
 footer {
   width: 100%;
-  height: 120px;
+  height: 40px;
   bottom: 0px;
 
     overflow: hidden;
@@ -203,7 +204,7 @@ figure img {
 
 .imagemIPhones {
   height: 300px;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .iPhonetLogo {
@@ -246,6 +247,7 @@ h1 {
 
 .imageCard {
   height: 320px;
+  padding-bottom: 5px;
 }
 
 form {
@@ -310,4 +312,46 @@ input[type=submit], button[type=submit] {
 article:hover figure img {
   transform: scale(1.03);
   transition: all 1s ease-out;
+}
+
+
+.sliderImage {
+  max-width: 600px;
+}
+
+.footerArticle {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+
+
+}
+
+.iosImage {
+  width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.iossDiv {
+  z-index: 4;
+  position: absolute;
+  margin-top: 110px;
+  color: white;
+  text-align: left;
+  margin-left: 60px;
+}
+
+.slick div {
+  border-radius: 8px;
+  object-fit:contain;
+}
+
+.slick {
+  padding-top: 15px;
+  
 }

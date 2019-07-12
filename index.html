@@ -7,8 +7,7 @@
     <style type="text/css">
         @import "style.css";
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="javascript.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 </head>
 
 <body>
@@ -101,16 +100,15 @@
             <article class="box boxCentral">
                 <div id="airpodsDiv" class="airpodsDiv">
                     <h1>AirPods</h1>
-                <p>with wireless charging. Watch the film.</p>
+                    <p>with wireless charging. Watch the film.</p>
                 </div>
-                <video controls class="videoPods" controls  poster="imagens/airPods.jpg">
-                        <source src="imagens/airpods.mp4" 
-                                type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
-                      </video>
+                <video controls class="videoPods" poster="imagens/airPods.jpg">
+                    <source src="imagens/airpods.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+                </video>
             </article>
             <!-- Card-->
             <article class="box boxLeft centerText">
-                    <h1>This is Card</h1>
+                <h1>This is Card</h1>
                 <p>A new kind of credit card. Created by Apple, not a bank. </p>
                 <div class="linkLarge">
                     <a href="#" target="_self">Learn more</a>
@@ -118,36 +116,72 @@
                 <figure><img class="imageCard" src="imagens/card.jpg" alt="Apple Card"></figure>
             </article>
 
-             <!-- Form-->
-             <article class="box boxRight centerText">
-                    <h1>Be the first to get Card.</h1>
+            <!-- Form-->
+            <article class="box boxRight centerText">
+                <h1>Be the first to get Card.</h1>
                 <p>Sign up and we’ll send you the latest news about Apple Card. </p>
                 <p>The power of iPhone. In a credit card.</p>
                 <div class="formDiv">
-                        <form action="card.aspx" method="post">
-                            <input type="text" name="nome" class="formTags inputStyle" placeholder="Nome completo" required>
-                            <input type="email" name="email" class="formTags inputStyle" placeholder="Email de contato" required>
-                            <select class="formTags inputStyle" name="assunto">
-                                <option value="0">Assunto</option>
-                                <option value="sugestao">Sugestão</option>
-                                <option value="reclamacao">Reclamação</option>
-                                <option value="elogio">Elogio</option>
-                            </select>
-                            <textarea class="formTags inputStyle" name="mensagem" placeholder="Deixe sua mensagem..." rows="4"></textarea>
-                            <input type="submit" name="acao" class="formTags inputStyle" value="Enviar">
-                        </form>
-                    </div>
+                    <form action="card.aspx" method="post">
+                        <input type="text" name="nome" class="formTags inputStyle" placeholder="Full name" required>
+                        <input type="email" name="email" class="formTags inputStyle" placeholder="Email" required>
+                        <select class="formTags inputStyle" name="assunto">
+                            <option value="0">Subject</option>
+                            <option value="sugestao">Suggestion</option>
+                            <option value="reclamacao">Complaint</option>
+                            <option value="elogio">Compliment</option>
+                        </select>
+                        <textarea class="formTags inputStyle" name="mensagem" placeholder="Your message..."
+                            rows="4"></textarea>
+                        <input type="submit" name="acao" class="formTags inputStyle" value="Send">
+                    </form>
+                </div>
             </article>
-            <article class="box boxCentral boxFooter"></article>
 
+
+            <article class="box boxCentral footerArticle">
+                <div class="iossDiv">
+                    <h1>iOS 13</h1>
+                    <p>A whole new look.</p>
+                    <p>On a whole new level.</p>
+                    <div class="linkLarge">
+                        <a href="#" target="_self">Learn more</a>
+                    </div>
+                </div>
+                <figure><img class="iosImage" src="imagens/iOS13.jpg" alt="Apple iOS 13"></figure>
+            </article>
+            <!-- Plugin Slick -->
+            <article class="footerArticle">
+
+                <div class="slick">
+                    <div><img src="imagens/01.jpg" alt="Apple" /></div>
+                    <div><img src="imagens/02.jpg" alt="Apple" /></div>
+                    <div><img src="imagens/03.jpg" alt="Apple" /></div>
+                    <div><img src="imagens/04.jpg" alt="Apple" /></div>
+                    <div><img src="imagens/05.jpg" alt="Apple" /></div>
+                    <div><img src="imagens/06.jpg" alt="Apple" /></div>
+                    <div><img src="imagens/07.jpg" alt="Apple" /></div>
+                    <div><img src="imagens/08.jpg" alt="Apple" /></div>
+                    <div><img src="imagens/09.jpg" alt="Apple" /></div>
+                    <div><img src="imagens/10.jpg" alt="Apple" /></div>
+                </div>
+            </article>
 
         </div>
     </main>
     <footer>
         <div class="">
             <div>
-                <div>ok</div>
+                <div></div>
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="javascript.js"></script>
+
 </body>
+
+</html>

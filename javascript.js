@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+$(document).ready(function(){
 
     $('video')[0].removeAttribute("controls");
         
@@ -11,4 +11,17 @@ window.addEventListener("load", function () {
             $('#airpodsDiv')[0].display = '';
         }
     });
+
+
+    $('.slick').slick({
+        fade: true,
+        nextArrow: false,
+        prevArrow: false,
+        autoplay: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: false,
+        centerMode: true
+      });
 });
