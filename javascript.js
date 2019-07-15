@@ -13,6 +13,25 @@ $(document).ready(function(){
     });
 
 
+    
+
+    // $('input[type=submit]').click(function() {
+
+        
+    //     $('input').each(function(){
+
+    //         var isValid = true;
+    //         var content = this.value;
+
+    //         if (content == "" || content = "Send") {
+    //             alert( "Message sent." );
+    //         }
+            
+    //     });
+
+    //     alert(content);
+    // });
+
     $('.slick').slick({
         fade: true,
         nextArrow: false,
